@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 10:48:01 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/28 19:26:04 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2022/12/19 17:08:53 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ t_word	*load_words(void)
 	size_t	i;
 	int		fd;
 
-	list_words = (t_word **)malloc(sizeof(t_word));
+	list_words = (t_word **)malloc(sizeof(t_word *) * 50);
 	fd = open("dictionary", O_RDONLY);
 	while (i < 100)
 	{
 		line = get_next_line(fd);
-		*list_words = ;
+		*list_words = (t_word *)malloc(sizeof(t_word));;
 		*list_words++;
 	}
 	return (*list_words);
