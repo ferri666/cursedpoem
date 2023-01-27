@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 12:42:08 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/26 16:42:54 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/01/27 13:45:04 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/uio.h>
+# include <time.h>
 
 typedef struct s_word
 {

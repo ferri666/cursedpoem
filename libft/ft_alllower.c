@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_alllower.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/23 12:41:40 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/27 13:46:21 by ffons-ti         ###   ########.fr       */
+/*   Created: 2023/01/24 12:09:11 by ffons-ti          #+#    #+#             */
+/*   Updated: 2023/01/27 13:30:52 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
-#include "../include/cursed.h"
 
-void	show_word(t_word *word)
+char	*ft_alllower(char *s)
 {
-	ft_putstr_fd(ft_allupper(word->text), 1);
-}
+	size_t	slen;
+	size_t	i;
 
-int	main(void)
-{
-	t_word	**words;
-	int		i;
-	int		rn;
-
+	slen = ft_strlen(s);
 	i = 0;
-	srand(time(NULL));
-	words = load_words();
-	while (i < 50)
+	while (i < slen)
 	{
-		rn = rand() % 50;
-		show_word(*(words + rn));
-		if ((i + 1) % 5 == 0)
-			ft_putchar_fd('\n', 1);
-		else
-			ft_putstr_fd(" ", 1);
+		s[i] = ft_tolower(s[i]);
 		i++;
 	}
-	free(words);
-	return (0);
+	return (s);
 }

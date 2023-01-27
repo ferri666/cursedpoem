@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/24 12:50:58 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/01/27 13:32:57 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,5 +119,11 @@ t_list		*ft_lstfirst(t_list *lst);
 char		*get_next_line(int fd);
 
 char		*ft_free(char *buffer, char *buf);
+
+char		*ft_alllower(char *s);
+
+char		*ft_allupper(char *s);
+
+char		*ft_capword(char *s);
 
 #endif

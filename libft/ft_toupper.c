@@ -6,15 +6,30 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 13:04:44 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/01/27 13:56:15 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+#include <stdio.h>
 
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 		c -= 32;
+	if (c == 135)
+		c = 128;
+	if (c == 164)
+		c++;
+	if (c == 160)
+		c = 181;
+	if (c == 161)
+		c = 214;
+	if (c == 130)
+		c = 144;
+	if (c == 162)
+		c = 224;
+	if (c == 163)
+		c = 233;
 	return (c);
 }
