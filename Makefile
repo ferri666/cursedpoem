@@ -4,7 +4,7 @@ LIBFT 		= libft.a
 INCLUDE 	= include
 SRC_DIR		= src/
 OBJ_DIR		= obj/
-SRC_FILES	= main
+SRC_FILES	= main loadWords
 
 CC				= gcc
 RM				= rm -f
@@ -26,7 +26,7 @@ $(OBJ_DIR)%.o	: 	$(SRC_DIR)%.c
 
 $(LIBFT):				
 					@make -C $(LIBFT_DIR)
-					@cp $(LIBFT_DIR)/$(LIBFT)
+					@cp $(LIBFT_DIR)/$(LIBFT) .
 
 clean:				
 					@$(RM) $(OBJ)

@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/23 09:41:45 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/01/24 12:50:58 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <limits.h>
 
 typedef struct s_list
 {
@@ -112,5 +115,9 @@ void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, int (*f)(void *), void (*del)(void *));
 
 t_list		*ft_lstfirst(t_list *lst);
+
+char		*get_next_line(int fd);
+
+char		*ft_free(char *buffer, char *buf);
 
 #endif

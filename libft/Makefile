@@ -6,7 +6,7 @@
 #    By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 19:24:41 by ffons-ti          #+#    #+#              #
-#    Updated: 2022/11/20 18:54:52 by ffons-ti         ###   ########.fr        #
+#    Updated: 2023/01/25 15:04:40 by ffons-ti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,18 +23,22 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_calloc.c \
 					ft_putendl_fd.c ft_putnbr_fd.c ft_atoi2.c ft_lstnew.c \
 					ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
-					ft_lstiter.c ft_lstmap.c ft_atoi2.c  ft_lstfirst.c
+					ft_lstiter.c ft_lstmap.c ft_atoi2.c  ft_lstfirst.c \
+					get_next_line.c
 					
 OBJS			= $(SRCS:.c=.o)
 
 
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror
+CFLAGS			= -Wall -Wextra -Werror -D BUFFER_SIZE=42
 
 $(NAME):		$(OBJS)
 				@ar rcs $(NAME) $(OBJS)
 				@echo "Libft.a created!"
+
+%.o:			%.c
+				@$(CC) $(CFLAGS) -o $@ -c $^
 
 all:			$(NAME)
 
