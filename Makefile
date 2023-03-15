@@ -4,7 +4,7 @@ LIBFT 		= libft.a
 INCLUDE 	= include
 SRC_DIR		= src/
 OBJ_DIR		= obj/
-SRC_FILES	= main loadWords
+SRC_FILES	= main loadWords zalgo
 
 CC				= gcc
 RM				= rm -f

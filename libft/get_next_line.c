@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:39:18 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/24 12:49:42 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/02/25 13:03:43 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static char	*ft_next(char *buffer)
 		free(buffer);
 		return (NULL);
 	}
-	line = (char *)malloc(sizeof(char) * (ft_strlen(buffer) - i + 1));
+	line = (char *)ft_calloc(sizeof(char), (ft_strlen(buffer) - i + 1));
 	if (!line)
 		return (NULL);
 	ft_bzero(line, (ft_strlen(buffer) - i + 1));
@@ -77,7 +77,7 @@ static char	*read_file(int fd, char *res)
 
 	if (!res)
 		res = ft_calloc(1, 1);
-	buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
+	buffer = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
 	if (!buffer)
 		return (NULL);
 	byte_read = 1;

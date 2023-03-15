@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:39:02 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/24 12:47:53 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/01/31 16:44:27 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdarg.h>
 
 char	*get_next_line(int fd);
 char	*ft_free(char *buffer, char *buf);

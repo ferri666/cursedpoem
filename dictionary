@@ -1,5 +1,5 @@
-atrapada;a;f
-atrapado;a;m
+encerrada;a;f
+encerrado;a;m
 caída;a;f
 caído;a;m
 cerrada;a;f
@@ -74,7 +74,7 @@ puerta;n;f
 red;n;f
 araña;n;f
 salto;n;m
-sangre;n;m
+sangre;n;f
 serpiente;n;f
 silencio;n;m
 silueta;n;f
@@ -91,3 +91,13 @@ encantado;a;m
 encantada;a;f
 magia;n;f
 hueso;n;m
+mata;v;p
+sueña;v;p
+mira;v;p
+espera;v;p
+corta;v;p
+matar;v;i
+soñar;v;i
+mirar;v;i
+esperar;v;i
+cortar;v;i

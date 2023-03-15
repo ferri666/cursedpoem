@@ -6,7 +6,7 @@
 #    By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 19:24:41 by ffons-ti          #+#    #+#              #
-#    Updated: 2023/01/27 13:34:35 by ffons-ti         ###   ########.fr        #
+#    Updated: 2023/02/14 17:59:34 by ffons-ti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ OBJS			= $(SRCS:.c=.o)
 
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -D BUFFER_SIZE=42
+CFLAGS			= -Wall -Wextra -Werror -D BUFFER_SIZE=1
 
 $(NAME):		$(OBJS)
 				@ar rcs $(NAME) $(OBJS)
