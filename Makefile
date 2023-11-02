@@ -34,7 +34,7 @@ clean:
 					@make -C $(LIBFT_DIR) clean
 					@echo "Clean boys Indeed!"
 
-fclean:				
+fclean:				clean
 					@make -C $(LIBFT_DIR) fclean
 					@$(RM) $(LIBFT)
 					@$(RM) $(NAME)

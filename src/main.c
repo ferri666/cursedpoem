@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 12:41:40 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/15 15:27:15 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:04:35 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -207,8 +207,8 @@ int main(void)
 	show_all_words();
 	show_all_words();
 }
-
 */
+
 int	main(int argc, char **argv)
 {
 	int		i;
@@ -220,6 +220,7 @@ int	main(int argc, char **argv)
 	if (i == 0)
 		i = 1;
 	srand(time(NULL));
+	ft_putstr_fd("  _,,  , ,_   _,  _,  ,_      ,_  _,  _, , , \n /  |  | |_) (_, /_,  | \\,    |_)/ \\,/_,|\\/| \n'\\_'\\__|'| \\  _)'\\_  _|_/    '| '\\_/'\\_ | `| \n   `   ` '  `'     `'         '  '     `'  ` \n                                             \n", 1);
 	versos(i);
 	return (0);
 }
